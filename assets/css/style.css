@@ -6,7 +6,7 @@
   --ff-poppins: "Poppins", sans-serif;
   --ff-outfit: "Outfit", sans-serif;
 
-  --fs-lg: 3rem;
+  --fs-lg: 3.3rem;
   --fs-md: 2.4rem;
   --fs-sm: 2rem;
 
@@ -22,8 +22,9 @@
   --fw-800: 800;
 
   /* Colors */
+  --bg: #fff9e9;
   --color-white: rgb(255, 255, 255);
-  --color-black: rgb(23, 23, 23);
+  --color-black: rgb(43, 43, 43);
   --color-black-15: rgba(0, 0, 0, 0.15);
   --color-blue: rgb(36, 137, 211);
   --color-blue-15: rgba(36, 137, 211, 0.15);
@@ -35,8 +36,6 @@
   --color-purple-15: rgba(114, 83, 164, 0.15);
   --color-brown: #db604e;
   --color-brown-15: rgba(219, 96, 78, 0.15);
-
-  --color-bg: rgb(255, 249, 233);
 
   /* Border Radius */
   --border-8: 8px;
@@ -266,7 +265,7 @@ img {
   left: 0;
   width: 100%;
   background-color: var(--color-white);
-  padding-block: 12px;
+  padding-block: 20px;
   box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.05);
   z-index: 9;
 }
@@ -360,7 +359,10 @@ img {
 */
 .hero {
   padding-block-start: calc(var(--section-padding) + 60px);
-  background-color: var(--color-bg);
+  background: url(/assets/images/hero-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero .hero-title .title {
@@ -449,26 +451,57 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
 }
 
 .card-item.blue {
   background-color: var(--color-blue-15);
 }
 
+.card-item.blue:hover {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}
+
 .card-item.orange {
   background-color: var(--color-orange-15);
+}
+
+.card-item.orange:hover {
+  background-color: var(--color-orange);
+  color: var(--color-white);
 }
 
 .card-item.yellow {
   background-color: var(--color-yellow-15);
 }
 
+.card-item.yellow:hover {
+  background-color: var(--color-yellow);
+  color: var(--color-white);
+}
+
 .card-item.purple {
   background-color: var(--color-purple-15);
 }
 
+.card-item.purple:hover {
+  background-color: var(--color-purple);
+  color: var(--color-white);
+}
+
 .card-item.brown {
   background-color: var(--color-brown-15);
+}
+
+.card-item.brown:hover {
+  background-color: var(--color-brown);
+  color: var(--color-white);
 }
 
 .card-item .card-image {
@@ -493,14 +526,14 @@ img {
 
 .card-text .card-title {
   font-size: 1.4rem;
-  line-height: 1.4;
+  line-height: 1.8;
 }
 
 /* 
 =====> Profile Section <=====
 */
 .profile {
-  background: url("./assets/images/profile-bg.svg");
+  background-color: var(--bg);
   text-align: center;
 }
 
