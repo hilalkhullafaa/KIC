@@ -367,7 +367,7 @@ img {
 
 .hero .hero-title .title {
   text-align: start;
-  margin-block: 30px;
+  margin-block: 10px 30px;
 }
 
 .hero .hero-cta {
