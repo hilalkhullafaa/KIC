@@ -359,7 +359,7 @@ img {
 */
 .hero {
   padding-block-start: calc(var(--section-padding) + 60px);
-  background: url(/assets/images/hero-bg.svg);
+  background: url(./assets/images/hero-bg.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -525,7 +525,7 @@ img {
 }
 
 .card-text .card-title {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: 1.8;
 }
 
