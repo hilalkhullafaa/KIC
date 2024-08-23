@@ -216,15 +216,15 @@ img {
 }
 
 .span1 {
-  color: var(--color-purple);
+  color: var(--color-yellow);
 }
 
 .span2 {
-  color: var(--color-orange);
+  color: var(--color-blue);
 }
 
 .span3 {
-  color: var(--color-blue);
+  color: var(--color-purple);
 }
 
 .banner {
