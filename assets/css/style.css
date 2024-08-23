@@ -359,7 +359,7 @@ img {
 */
 .hero {
   padding-block-start: calc(var(--section-padding) + 60px);
-  background: url(assets/images/hero-bg.svg);
+  background: url(../images/hero-bg.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
